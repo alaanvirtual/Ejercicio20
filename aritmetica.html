@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Operaciones Aritméticas en JS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1 { color: #2c3e50; }
+    h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 4px; }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .resultado {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #27ae60;
+      margin-top: 8px;
+    }
+    .operacion {
+      font-size: 1em;
+      color: #7f8c8d;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⚙️ Operaciones Aritméticas en JavaScript</h1>
+  <p>Variables declaradas: <code>a = 12</code> y <code>b = 4</code></p>
+
+  <!-- Suma -->
+  <div class="card">
+    <h2>➕ Suma</h2>
+    <p class="operacion">a + b</p>
+    <p class="resultado" id="suma"></p>
+  </div>
+
+  <!-- Resta -->
+  <div class="card">
+    <h2>➖ Resta</h2>
+    <p class="operacion">a - b</p>
+    <p class="resultado" id="resta"></p>
+  </div>
+
+  <!-- División -->
+  <div class="card">
+    <h2>➗ División</h2>
+    <p class="operacion">a / b</p>
+    <p class="resultado" id="division"></p>
+  </div>
+
+  <!-- Exponenciación -->
+  <div class="card">
+    <h2>🔢 Exponenciación</h2>
+    <p class="operacion">a ** b</p>
+    <p class="resultado" id="exponenciacion"></p>
+  </div>
+
+  <script>
+    // Declaración de variables
+    var a = 12;
+    var b = 4;
+
+    // Operaciones aritméticas
+    var suma            = a + b;
+    var resta           = a - b;
+    var division        = a / b;
+    var exponenciacion  = a ** b;
+
+    // Imprimir resultados en la página con innerHTML
+    document.getElementById("suma").innerHTML
+      = a + " + " + b + " = " + suma;
+
+    document.getElementById("resta").innerHTML
+      = a + " - " + b + " = " + resta;
+
+    document.getElementById("division").innerHTML
+      = a + " / " + b + " = " + division;
+
+    document.getElementById("exponenciacion").innerHTML
+      = a + " ** " + b + " = " + exponenciacion;
+  </script>
+
+</body>
+</html>
